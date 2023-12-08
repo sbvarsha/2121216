@@ -1,0 +1,14 @@
+---
+- name: Perform Tasks
+  hosts: localhost
+
+  tasks:
+    - name: Create a file named Registration_Number.txt
+      file:
+        path: /tmp/73772121216.txt
+        state: touch
+
+    - name: Create a file named Registration_Number
+      file:
+        path: /tmp/73772121216
+        state: touch
